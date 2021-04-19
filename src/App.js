@@ -1,5 +1,8 @@
+import React from "react";
+import ExampleBasitToast from "./example/BasitToast";
+
 const App = () => {
-  return <h1>Halo Basit toast !</h1>;
+  return <ExampleBasitToast />;
 };
 
 export default App;
