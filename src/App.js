@@ -1,7 +1,5 @@
-import React from "react";
-
 const App = () => {
-  return <h1>Halo Dunia !</h1>;
+  return <h1>Halo Basit toast !</h1>;
 };
 
 export default App;
