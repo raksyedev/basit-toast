@@ -11,9 +11,9 @@ const ExampleBasitToast = () => {
   return (
     <>
       <BasitToast
-        handleClose={() => setOpenToast(false)}
-        position="topcenter"
         isOpen={openToast}
+        handleClose={() => setOpenToast(false)}
+        position="bottomcenter"
         severity="errors"
         message="Your errors toast here !"
       />

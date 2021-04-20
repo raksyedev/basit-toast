@@ -27,6 +27,7 @@ const BasitToast = ({
       {severity === SUCCESS && <SuccessIcon />}
       {severity === WARNING && <WarningIcon />}
       {severity === ERRORS && <ErrorsIcon />}
+
       <p className="basit-toast-title">
         {message.length > 25 ? `${message.substr(0, 25)}...` : message}
       </p>
