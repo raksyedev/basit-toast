@@ -1,9 +1,8 @@
 import React from "react";
-import ExampleBasitToast from "./example/BasitToast";
-import ExampleUseBasitToast from "./example/useBasitToast";
+import ExampleBasitToast from './example/basittoast';
 
 const App = () => {
-  return <ExampleUseBasitToast />;
+  return <ExampleBasitToast />;
 };
 
 export default App;
