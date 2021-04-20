@@ -1,6 +1,3 @@
-import React from "react";
-import { render } from "react-dom";
-import App from "./App";
-import './scss/index.scss';
-
-render(<App />, document.getElementById("root"));
+export * from './class';
+export * from './hooks';
+export * from './components';

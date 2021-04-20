@@ -2,7 +2,7 @@
 
 exports[`BasitToast have been test 1`] = `
 <div
-  className="basit-toast basit-toast__success basit-toast__undefined show"
+  className="basit-toast basit-toast__success basit-toast__success show"
 >
   <svg
     fill="none"
