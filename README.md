@@ -4,45 +4,160 @@ a basit (simple) toast like notification 🔔🔔.
 
 ### Daftar Isi 📚
 
-- #### [Instalasi](#instalasi-1)
-- #### [BasitToastComponents](#basit-toast-components-1)
-- #### [useBasitToast](#use-basit-toast-1)
-- #### [basittoast](#basittoast)
-- #### [Props](#props-1)
-- #### [How to Contribute ?](#how-to-contribute-1)
-- #### [License](#license-1)
+- [Instalasi](#instalasi)
+- [BasitToastComponents](#basit-toast-components)
+- [useBasitToast](#use-basit-toast)
+- [basittoast](#basittoast)
+- [Props](#props)
+- [How to Contribute ?](#how-to-contribute)
+- [License](#license)
 
 <br/>
 
 ### Instalasi
 
-
-
 <br/>
 
 ### BasitToastComponents
 
+```jsx
+import React, { useState } from "react";
+import { BasitToast } from "basit-toast";
+
+const ExampleBasitToast = () => {
+  const [openToast, setOpenToast] = useState(false);
+
+  const handleClick = () => {
+    setOpenToast(true);
+  };
+
+  return (
+    <>
+      <BasitToast
+        isOpen={openToast}
+        handleClose={() => setOpenToast(false)}
+        position="bottomcenter"
+        severity="errors"
+        message="Your errors toast here !"
+      />
+      <button onClick={handleClick}>Click</button>
+    </>
+  );
+};
+
+export default ExampleBasitToast;
+```
 
 <br/>
 
+### useBasitToast
+
+```jsx
+import React from "react";
+import useBasitToast from "basit-toast";
+
+const ExampleUseBasitToast = () => {
+  const { defaults } = useBasitToast();
+
+  const handleClick = () => {
+    defaults("Hallo", "bottomcenter");
+  };
+
+  return <button onClick={handleClick}>click</button>;
+};
+
+export default ExampleUseBasitToast;
+```
+
+<br/>
 
 ### basittoast
 
+```jsx
+import React from "react";
+import { basittoast } from "basit-toast";
+
+const ExampleBasitToast = () => {
+  const handleClick = () => {
+    basittoast.info("HELLO", "bottomcenter", 3000);
+  };
+
+  return <button onClick={handleClick}>click</button>;
+};
+
+export default ExampleBasitToast;
+```
 
 <br/>
-
 
 ### Props
 
 
-<br/>
+<table>
+    <thead>
+     <tr>
+        <th>Props</th>
+        <th>Type</th>
+        <th>Required</th>
+     </tr>   
+    </thead>
+    <tbody>
+        <tr>
+            <td>isOpen</td>
+            <td>boolean</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>severity ["default", "success", "warning", "errors", "info"]</td>
+            <td>string</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>position ["topright",
+    "topleft",
+    "topcenter",
+    "bottomright",
+    "bottomleft",
+    "bottomcenter",]</td>
+            <td>string</td>
+            <td>true</td>
+        </tr> 
+        <tr>
+            <td>message</td>
+            <td>string</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>handleClose</td>
+            <td>func</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>handleCloseDuration</td>
+            <td>number</td>
+            <td>false</td>
+        </tr>
+    </tbody>
 
+</table>
+
+<br/>
 
 ### How to Contribute ?
 
+1. clone this repository
+2. install dependencies
+```bash
+yarn
+```
+3. checkout to new branch
+```bash
+git checkout -B new-feature
+```
+4. modify and push in your branch
+5. add pull request and done.
 
 <br/>
-
 
 ### Licence
 
