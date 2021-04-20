@@ -14,7 +14,9 @@ a basit (simple) toast like notification 🔔🔔.
 
 <br/>
 
-### Instalasi
+## Instalasi
+
+<br/>
 
 ```bash
 yarn add basit-toast
@@ -26,7 +28,7 @@ npm install basit-toast
 
 <br/>
 
-### BasitToastComponents
+## BasitToastComponents
 
 ```jsx
 import React, { useState } from "react";
@@ -59,7 +61,7 @@ export default ExampleBasitToast;
 
 <br/>
 
-### useBasitToast
+## useBasitToast
 
 ```jsx
 import React from "react";
@@ -80,7 +82,7 @@ export default ExampleUseBasitToast;
 
 <br/>
 
-### basittoast
+## basittoast
 
 ```jsx
 import React from "react";
@@ -99,7 +101,7 @@ export default ExampleBasitToast;
 
 <br/>
 
-### Props
+## Props
 
 <table>
     <thead>
@@ -151,7 +153,9 @@ export default ExampleBasitToast;
 
 <br/>
 
-### How to Contribute ?
+## How to Contribute ?
+
+<br/>
 
 1. clone this repository
 2. install dependencies
@@ -171,6 +175,6 @@ git checkout -B new-feature
 
 <br/>
 
-### Licence
+## Licence
 
 MIT.
