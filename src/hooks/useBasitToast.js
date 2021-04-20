@@ -1,6 +1,6 @@
 import { success, warning, errors, defaults, info } from "../core/index";
 
-const useBasitToast = () => {
+export const useBasitToast = () => {
   return {
     success,
     warning,
@@ -9,5 +9,3 @@ const useBasitToast = () => {
     info,
   };
 };
-
-export default useBasitToast;
