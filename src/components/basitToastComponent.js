@@ -3,7 +3,7 @@ import { SuccessIcon, WarningIcon, ErrorsIcon, DefaultIcon } from "../icons";
 import { SUCCESS, DEFAULT, WARNING, ERRORS } from "../type/index";
 import PropTypes from "prop-types";
 
-const BasitToast = ({
+export const BasitToast = ({
   isOpen,
   severity,
   position,
@@ -34,8 +34,6 @@ const BasitToast = ({
     </div>
   );
 };
-
-export default BasitToast;
 
 BasitToast.propTypes = {
   /**

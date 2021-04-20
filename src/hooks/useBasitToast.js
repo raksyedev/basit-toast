@@ -1,4 +1,4 @@
-import { success, warning, errors, defaults } from "../functions/index";
+import { success, warning, errors, defaults } from "../core/index";
 
 const useBasitToast = () => {
   return {
