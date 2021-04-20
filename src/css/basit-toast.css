@@ -85,6 +85,17 @@
   font-weight: bold;
   margin-left: 0.75rem;
 }
+
+.basit-toast__info {
+  background-color: #1CA7F5;
+}
+.basit-toast__info .basit-toast-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: 0.75rem;
+}
+
 .basit-toast.show {
   visibility: visible;
   -webkit-animation: zoomIn 0.5s, zoomOut 0.5s 4.5s;

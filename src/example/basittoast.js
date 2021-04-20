@@ -3,7 +3,7 @@ import { basittoast } from "../class";
 
 const ExampleBasitToast = () => {
   const handleClick = () => {
-    basittoast.warning("HELLO", "bottomcenter", 3000);
+    basittoast.info("HELLO", "bottomcenter", 3000);
   };
 
   return <button onClick={handleClick}>click</button>;
