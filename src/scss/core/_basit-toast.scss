@@ -98,6 +98,17 @@
       margin-left: 0.75rem;
     }
   }
+
+  &__info {
+    background-color: $info;
+
+    .basit-toast-title {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-left: 0.75rem;
+    }
+  }
 }
 
 .basit-toast.show {

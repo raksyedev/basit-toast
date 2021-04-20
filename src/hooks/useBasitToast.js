@@ -1,4 +1,4 @@
-import { success, warning, errors, defaults } from "../core/index";
+import { success, warning, errors, defaults, info } from "../core/index";
 
 const useBasitToast = () => {
   return {
@@ -6,6 +6,7 @@ const useBasitToast = () => {
     warning,
     errors,
     defaults,
+    info,
   };
 };
 
