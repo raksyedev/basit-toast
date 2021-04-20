@@ -16,6 +16,14 @@ a basit (simple) toast like notification 🔔🔔.
 
 ### Instalasi
 
+```bash
+yarn add basit-toast
+```
+
+```bash
+npm install basit-toast
+```
+
 <br/>
 
 ### BasitToastComponents
@@ -38,6 +46,7 @@ const ExampleBasitToast = () => {
         handleClose={() => setOpenToast(false)}
         position="bottomcenter"
         severity="errors"
+        handleCloseDuration={3000}
         message="Your errors toast here !"
       />
       <button onClick={handleClick}>Click</button>
@@ -91,7 +100,6 @@ export default ExampleBasitToast;
 <br/>
 
 ### Props
-
 
 <table>
     <thead>
@@ -147,13 +155,17 @@ export default ExampleBasitToast;
 
 1. clone this repository
 2. install dependencies
+
 ```bash
 yarn
 ```
+
 3. checkout to new branch
+
 ```bash
 git checkout -B new-feature
 ```
+
 4. modify and push in your branch
 5. add pull request and done.
 
