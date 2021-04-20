@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 
 export const BasitToast = ({
   isOpen,
-  severity,
-  position,
+  severity = "default",
+  position = "bottomcenter",
   message,
   handleClose,
   handleCloseDuration = 3000,
@@ -43,7 +43,7 @@ BasitToast.propTypes = {
   /**
    * Severity type for toast
    */
-  severity: PropTypes.oneOf(["default", "success", "warning", "errors"])
+  severity: PropTypes.oneOf(["default", "success", "warning", "errors", "info"])
     .isRequired,
   /**
    * position toast if show
