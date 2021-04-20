@@ -2,7 +2,7 @@
   https://github.com/usamahbass/starter-react-webpack
 */
 
-
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"]
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": ["@babel/plugin-transform-react-jsx"]
 }
