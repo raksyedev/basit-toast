@@ -1,13 +1,13 @@
 {
-  "name": "react-webpack-starter",
+  "name": "basit-toast",
   "version": "1.0.0",
-  "description": "",
+  "description": "a basit (simple) toast like notification :D",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js --open"
   },
-  "author": "Bass",
+  "author": "raksyedev",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.10.3",

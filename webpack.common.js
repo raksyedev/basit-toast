@@ -1,3 +1,7 @@
+/* 
+  https://github.com/usamahbass/starter-react-webpack
+*/
+
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 

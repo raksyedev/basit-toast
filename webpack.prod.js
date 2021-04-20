@@ -1,3 +1,7 @@
+/* 
+  https://github.com/usamahbass/starter-react-webpack
+*/
+
 const merge = require("webpack-merge");
 const common = require("./webpack.common");
 

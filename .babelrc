@@ -1,3 +1,8 @@
+/* 
+  https://github.com/usamahbass/starter-react-webpack
+*/
+
+
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
