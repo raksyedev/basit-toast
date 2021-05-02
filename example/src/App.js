@@ -1,10 +1,17 @@
 import React from 'react'
-
-import { ExampleComponent } from 'basit-toast'
+import basitToastExample from './basittoast'
+import BasitToastComponentExample from './BasitToast'
+import useBasitToastExample from './useBasitToast'
 import 'basit-toast/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <>
+      <basitToastExample />
+      <BasitToastComponentExample />
+      <useBasitToastExample />
+    </>
+  )
 }
 
 export default App
