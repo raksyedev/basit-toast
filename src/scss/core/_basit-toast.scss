@@ -1,0 +1,170 @@
+// LICENSE MIT
+// author @raksyedev
+// visit https://github.com/raksyedev
+
+.basit-toast {
+  position: absolute;
+  visibility: hidden;
+  width: 290px;
+  border-radius: 5px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__bottomcenter {
+    bottom: 40px;
+    right: 40%;
+  }
+
+  @media (max-width: 600px) {
+    &__bottomcenter {
+      right: 15%;
+    }
+  }
+
+  &__topcenter {
+    top: 20px;
+    right: 40%;
+  }
+
+  @media (max-width: 600px) {
+    &__topcenter {
+      right: 15%;
+    }
+  }
+
+  &__topright {
+    top: 20px;
+    right: 20px;
+  }
+
+  &__topleft {
+    top: 20px;
+    left: 20px;
+  }
+
+  &__bottomleft {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  &__bottomright {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  &__default {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .basit-toast-title {
+      color: #333333;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-left: 0.75rem;
+    }
+  }
+
+  &__success {
+    background-color: $success;
+
+    .basit-toast-title {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 1.1rem;
+      white-space: pre-wrap;
+      margin-left: 0.75rem;
+    }
+  }
+
+  &__warning {
+    background-color: $warning;
+
+    .basit-toast-title {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-left: 0.75rem;
+    }
+  }
+
+  &__errors {
+    background-color: $errors;
+
+    .basit-toast-title {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-left: 0.75rem;
+    }
+  }
+
+  &__info {
+    background-color: $info;
+
+    .basit-toast-title {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-left: 0.75rem;
+    }
+  }
+}
+
+.basit-toast.show {
+  visibility: visible;
+  -webkit-animation: zoomIn 0.5s, zoomOut 0.5s 4.5s;
+  animation: zoomIn 0.5s, zoomOut 0.5s 4.5s;
+}
+
+@-webkit-keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
